@@ -43,8 +43,10 @@ pages:
   script:
     - mkdir public
     - mv build/reports/jacoco/test/html/* public
+    - cat build/reports/jacoco/test/html/index.html
   artifacts:
     paths:
       - public
   only:
     - master
+
