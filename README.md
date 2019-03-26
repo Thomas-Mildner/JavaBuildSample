@@ -2,7 +2,7 @@
 
 ![Build Status](https://gitlab.com/jonny990421/javabuildsample/badges/master/pipeline.svg)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-![coverage report](https://gitlab.com/jonny990421/javabuildsample/badges/master/coverage.svg?job=coverage)
+[![coverage report](https://gitlab.com/jonny990421/javabuildsample/badges/master/coverage.svg)](https://gitlab.com/jonny990421/javabuildsample/commits/master)
 
 
 A small demo program to show the functionality of the CI Pipeline in Gitlab
