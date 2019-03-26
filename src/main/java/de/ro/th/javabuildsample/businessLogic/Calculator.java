@@ -1,4 +1,4 @@
-package de.ro.th.javabuildsample;
+package de.ro.th.javabuildsample.businessLogic;
 
 public class Calculator
 {

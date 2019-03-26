@@ -1,5 +1,7 @@
 package de.ro.th.javabuildsample;
 
+import de.ro.th.javabuildsample.businessLogic.Calculator;
+
 public class Main
 {
     public static void main(String[] args)

@@ -1,4 +1,5 @@
-import de.ro.th.javabuildsample.Calculator;
+package de.ro.th.javabuildsample.businessLogic;
+
 import org.junit.Assert;
 import org.junit.Test;
 

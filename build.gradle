@@ -1,5 +1,10 @@
 plugins {
     id 'java'
+    id 'jacoco'
+}
+
+ext {
+    coverageSourceDirs = 'src/test/java'
 }
 
 group 'de.ro.th.javabuildsample'
@@ -13,4 +18,11 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+jacocoTestReport {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
 }
