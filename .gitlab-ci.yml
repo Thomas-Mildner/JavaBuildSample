@@ -42,8 +42,8 @@ pages:
     - test
   script:
     - mkdir public
-    - mv build/reports/jacoco/test/html/* public
     - cat build/reports/jacoco/test/html/index.html
+    - mv build/reports/jacoco/test/html/* public
   artifacts:
     paths:
       - public
