@@ -34,7 +34,7 @@ test:
       - .gradle
   artifacts:
     paths:
-      - build/reports/jacoco/
+      - build/reports/jacoco/test/html/
 
 pages:
   stage: deploy
