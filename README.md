@@ -1,11 +1,9 @@
 # Java Build Sample
 
-![Build Status](https://gitlab.com/jonny990421/javabuildsample/badges/master/pipeline.svg)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-![coverage report](https://gitlab.com/jonny990421/javabuildsample/badges/master/coverage.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Java_BuildSample&metric=alert_status)](https://sonarcloud.io/dashboard?id=Java_BuildSample)
 
-A small demo program to show the functionality sonarqube analysis
+A small demo program to demonstrate the functionality of local sonarqube analysis with a docker container.
 
 ## Deployment
 
@@ -48,12 +46,22 @@ Visit http://localhost:9000/account/security/
 User: admin
 Password: admin
 
+![Token](./doc/GenerateToken.png)
 
+Copy the token and paste it into the build.gradle file
+```
+sonarqube {
+    properties {
+        property "sonar.projectKey", "Java_BuildSample"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "d63e5029a59a449a20e8c80e349899cca5ff0226"
+    }
+}
+```
 
-
+Start your analysis with gradle
 ```
 gradle sonarqube
 ```
 
-Report can be accessed on SonarCloud.io Page
-https://sonarcloud.io/dashboard?id=Java_BuildSample
+Report can be accessed on http://localhost:9000/dashboard?id=Java_BuildSample or online at SonarCloud.io https://sonarcloud.io/dashboard?id=Java_BuildSample

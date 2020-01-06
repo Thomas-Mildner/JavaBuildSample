@@ -25,7 +25,7 @@ sonarqube {
     properties {
         property "sonar.projectKey", "Java_BuildSample"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "3c554dad19e937c030f0ee1202e3f31499e0812a"
+        property "sonar.login", "d63e5029a59a449a20e8c80e349899cca5ff0226"
     }
 }
 
