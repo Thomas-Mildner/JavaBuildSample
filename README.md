@@ -5,10 +5,7 @@
 ![coverage report](https://gitlab.com/jonny990421/javabuildsample/badges/master/coverage.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Java_BuildSample&metric=alert_status)](https://sonarcloud.io/dashboard?id=Java_BuildSample)
 
-A small demo program to show the functionality of the CI Pipeline in Gitlab
-
-The detailed coverage report can be accessed under https://jonny990421.gitlab.io/javabuildsample/
-
+A small demo program to show the functionality sonarqube analysis
 
 ## Deployment
 
@@ -34,7 +31,25 @@ The coverage report can be found at /build/reports/jacoco/test/html/index.html
 
 ### Run Code Analysis
 
-Run Code Analysis with SonarCloud.io
+Run Code Analysis with local docker Sonarqube server
+
+#### Pull Docker image from Docker Hub
+```
+docker pull jonny9904/docker-sonarqube-custom_profile
+```
+
+#### Start Docker Container from image
+```
+docker run -d --name docker-sonarqube-custom_profile -p 9000:9000 jonny9904/docker-sonarqube-custom_profile
+```
+#### Generate Access Token
+Visit http://localhost:9000/account/security/
+
+User: admin
+Password: admin
+
+
+
 
 ```
 gradle sonarqube
