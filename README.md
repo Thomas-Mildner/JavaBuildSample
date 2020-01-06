@@ -46,7 +46,7 @@ Visit http://localhost:9000/account/security/
 User: admin
 Password: admin
 
-![Token](./doc/GenerateToken.png)
+![Token](./doc/GenerateToken.PNG)
 
 Copy the token and paste it into the build.gradle file
 ```
