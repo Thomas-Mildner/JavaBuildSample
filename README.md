@@ -43,8 +43,8 @@ docker run -d --name docker-sonarqube-custom_profile -p 9000:9000 jonny9904/dock
 #### Generate Access Token
 Visit http://localhost:9000/account/security/
 
-User: admin
-Password: admin
+> User: admin
+> Password: admin
 
 ![Token](./doc/GenerateToken.PNG)
 
