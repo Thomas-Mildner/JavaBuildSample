@@ -24,9 +24,8 @@ dependencies {
 sonarqube {
     properties {
         property "sonar.projectKey", "Java_BuildSample"
-        property "sonar.organization", "thomas-mildner-github"
-        property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "7de443e4b5c38c283df99ce90789abf7d80ebb48"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "3c554dad19e937c030f0ee1202e3f31499e0812a"
     }
 }
 
