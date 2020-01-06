@@ -9,7 +9,7 @@ public class Main
         System.out.println("Testing Calculator - Demo Program");
         System.out.println(String.format("1 + 4 = %s", Calculator.add(1, 4)));
 
-        
+
 
 
     }
