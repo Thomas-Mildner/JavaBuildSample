@@ -61,7 +61,7 @@ sonarqube {
 }
 ```
 then add sonarqube to your plugins in build.gradle file
-**id "org.sonarqube" version "2.8"**
+--> **id "org.sonarqube" version "2.8"**
 ```
 plugins {
     id 'java'
